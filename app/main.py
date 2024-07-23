@@ -6,7 +6,7 @@ import os
 import base64
 #from rxconfig import config
 from dotenv import load_dotenv
-from image import process_image
+from image_processing import process_image
 
 load_dotenv()
 
