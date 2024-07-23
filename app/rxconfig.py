@@ -1,4 +1,4 @@
 class Config:
-    API_URL = "https://reflex-webapp.onrender.com"
+    API_URL = "http://localhost:8000"
 
 config = Config()
