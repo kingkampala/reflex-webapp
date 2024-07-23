@@ -4,7 +4,7 @@ from pymongo import MongoClient
 import io
 import os
 import base64
-from rxconfig import config
+#from rxconfig import config
 from dotenv import load_dotenv
 from image import process_image
 
@@ -19,12 +19,7 @@ collection = db['ref-web']
 
 @app.route('/')
 def index():
-    api_url = config.API_URL
-    return rx.render(
-        "index.html",
-        title="Home",
-        content=f"Hi Mason, Welcome to your Reflex Webapp! <br>API URL: {api_url}"
-    )
+    return rx.render("index.html", title="Home", content="Hi Mason, Welcome to your Reflex Webapp!")
 
 @app.route('/data')
 def data():

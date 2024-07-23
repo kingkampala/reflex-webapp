@@ -1,4 +1,4 @@
 class Config:
-    API_URL = "http://your-server-ip:8000"
+    API_URL = "https://myapp.onrender.com"
 
 config = Config()
