@@ -28,11 +28,14 @@ def data():
 
 @app.route('/image')
 def image():
+    # Path to your image file
     image_path = "app/example.png"
 
+    # Process the image
     processed_image = process_image(image_path)
     
     if processed_image is not None:
+        # Convert the processed image to base64
         buffered = io.BytesIO()
         processed_image.save(buffered, format="PNG")
         img_str = base64.b64encode(buffered.getvalue()).decode()
