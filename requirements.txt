@@ -1,0 +1,4 @@
+reflex
+pymongo
+pillow
+python-dotenv
